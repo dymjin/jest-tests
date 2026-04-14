@@ -1,5 +1,4 @@
 import { calculator } from "./calculator.js";
-console.log(calculator.divide)
 
 describe("calculator", () => {
   test("add", () => {
