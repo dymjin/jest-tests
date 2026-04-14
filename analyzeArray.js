@@ -12,9 +12,9 @@ function makeRandomIntArr() {
 }
 
 function analyzeArray(arr) {
-  let sortedArr = arr.sort((a, b) => a - b)[0];
-  let min = arr[0];
-  let max = arr[arr.length - 1];
+  let sortedArr = [...arr].sort((a, b) => a - b);
+  let min = sortedArr[0];
+  let max = sortedArr[arr.length - 1];
   let average = arr.reduce((prev, curr) => prev + curr) / arr.length;
   let length = arr.length;
 
